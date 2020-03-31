@@ -2,7 +2,7 @@
 contains fresh (march-2020) clone of aiHabitat.
 
 ```sh
-git clone --recurse-submodules --remote-submodules git@gitlab.ciirc.cvut.cz:steidsta/aag-habitat.git
+git clone git@gitlab.ciirc.cvut.cz:steidsta/aag-habitat.git --recurse-submodules
 ```
 ## demo:
 ```sh
@@ -18,11 +18,14 @@ set up  and activate the conda environment specified in *.yml file
 ```sh
 conda env create -f conda_env_habitat.yml
 ```
+if instalatin for some reason fails, part of environment will be probably already created. to continue use 
+```sh
+conda env update -f conda_env_habitat.yml
+```
 
-
-#### habitat installation 
+#### habitat installation - Work in progress version, some steps might be ambiguous
  Simplified version, see official install instructions for details.
- Tested on fresh install of Ubuntu 18.04LTS with CUDA enabled graphics card
+ Tested on fresh install of virtualBox Ubuntu 18.04LTS 4GB RAM
 ```sh
 sudo apt-get update || true
 # These are fairly ubiquitous packages and your system likely has them already,
@@ -30,11 +33,18 @@ sudo apt-get update || true
 sudo apt-get install -y --no-install-recommends \
      libjpeg-dev libglm-dev libgl1-mesa-glx libegl1-mesa-dev mesa-utils xorg-dev freeglut3-dev
      
+sudo apt install gcc
+sudo apt-get update && sudo apt-get install build-essential
+
 cd habitat-sim
 #this should be already satisfied
 pip install -r requirements.txt
 python setup.py install 
-
+#OR to avoid memory issues
+python setup.py build_ext --parallel 1 install
+```
+if instalation for some reason fails, it might happen that build is corrupted, in order to avoid potential issues (e.g. missing build/dependencies.json), delete build folder
+```sh
 cd ../habitat-api
 #this should be already satisfied
 pip install -r requirements.txt
