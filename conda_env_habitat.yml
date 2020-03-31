@@ -47,7 +47,6 @@ dependencies:
     - grpcio==1.28.0rc3
     - gym==0.10.9
     - h5py==2.10.0
-    - habitat-sim==0.1.4
     - idna==2.9
     - ifcfg==0.21
     - imageio==2.8.0
@@ -71,7 +70,6 @@ dependencies:
     - keras-preprocessing==1.1.0
     - kiwisolver==1.1.0
     - llvmlite==0.31.0
-    - magnum==0.0.0
     - markdown==3.2.1
     - markupsafe==1.1.1
     - matplotlib==3.2.1
