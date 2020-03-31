@@ -27,7 +27,10 @@ conda env update -f conda_env_habitat.yml
 
 #### habitat installation - Work in progress version, some steps might be ambiguous
  Simplified version, see official install instructions for details.
- Tested on fresh install of virtualBox Ubuntu 18.04LTS 4GB RAM
+ Tested on 
+ - fresh install of (dualboot) Ubuntu 18.04LTS 16GB ram (4GB should be sufficient) with cuda enabled gpu
+ - Ubuntu 16LTS server
+ - virtual box Ubuntu 18.04LTS - installed, however when running there are issues with openGL capability, required GL 4.10, virtalbox provides 2.x. Possible workaround: install as on server (headless) and forward graphics to X11 server on host OS
 ```sh
 sudo apt-get update || true
 # These are fairly ubiquitous packages and your system likely has them already,
