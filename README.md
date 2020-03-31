@@ -36,7 +36,12 @@ sudo apt-get install -y --no-install-recommends \
 sudo apt install gcc
 sudo apt-get update && sudo apt-get install build-essential
 
-cd habitat-sim
+cd habitat-api
+#this should be already satisfied
+pip install -r requirements.txt
+pip install -e .
+
+cd ../habitat-sim
 #this should be already satisfied
 pip install -r requirements.txt
 python setup.py install 
@@ -44,11 +49,5 @@ python setup.py install
 python setup.py build_ext --parallel 1 install
 ```
 if instalation for some reason fails, it might happen that build is corrupted, in order to avoid potential issues (e.g. missing build/dependencies.json), delete build folder
-```sh
-cd ../habitat-api
-#this should be already satisfied
-pip install -r requirements.txt
-pip install -e .
-```
 
 
