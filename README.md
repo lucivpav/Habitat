@@ -66,16 +66,20 @@ $python
 
 # How to connect to habitat capable server with local X11 server
 step 1: connect to ciirc vpn : https://portal.ciirc.cvut.cz/it-issues/internet/vpn-ciirc
+
 step 2: install Xming  on your pc (for graphical output) 
+
 step 3: ssh connect to 10.35.125.131 with flag -X (to enable forwarding, if using putty: at ssh.X11forwarding enable forwarding) 
+
 step 4: install habitat: 
-    a] install anaconda
-    b] git clone  aag-habitat
-    c] create environment and activate
-    d] skip the sudo apt install, as all should be present already
-    e] use flag  --headless for habitat-sim, --parallel 1 is not necessary
-    f] download and unzip to habitata-api/data test-dataset wget dl.fbaipublicfiles.com/habitat/habitat-test-scenes.zip
-    g] cd havitat-api and run python examples/tutorial_example.py 
+  
+*    a] install anaconda
+*    b] git clone  aag-habitat
+*    c] create environment and activate
+*    d] skip the sudo apt install, as all should be present already
+*    e] use flag  --headless for habitat-sim, --parallel 1 is not necessary
+*    f] download and unzip to habitata-api/data test-dataset wget dl.fbaipublicfiles.com/habitat/habitat-test-scenes.zip
+*    g] cd havitat-api and run python examples/tutorial_example.py 
     
 you should see the simulator
     
