@@ -1,5 +1,9 @@
 # Wrapper for a clean build of aihabitat.org
 contains fresh (march-2020) clone of aiHabitat.
+
+```sh
+git clone --recurse-submodules --remote-submodules git@gitlab.ciirc.cvut.cz:steidsta/aag-habitat.git
+```
 ## demo:
 ```sh
 cd habitat-api
