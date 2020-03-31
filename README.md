@@ -44,10 +44,20 @@ pip install -e .
 cd ../habitat-sim
 #this should be already satisfied
 pip install -r requirements.txt
-python setup.py install 
-#OR to avoid memory issues
+#to avoid memory issues
 python setup.py build_ext --parallel 1 install
+python setup.py install 
 ```
 if instalation for some reason fails, it might happen that build is corrupted, in order to avoid potential issues (e.g. missing build/dependencies.json), delete build folder
+
+to quickly verify the instalation once can open python and check whether the modules are available
+```sh
+$python
+>>> import habitat
+>>> import habitat_sim
+
+...
+>>>exit()
+```
 
 
