@@ -5,6 +5,8 @@ contains fresh (march-2020) clone of aiHabitat.
 git clone git@gitlab.ciirc.cvut.cz:steidsta/aag-habitat.git --recurse-submodules
 ```
 ## demo:
+ dataset (dl.fbaipublicfiles.com/habitat/habitat-test-scenes.zip) 
+Download the test scenes data and extract data folder in zip to habitat-api/data/ where habitat-api/ is the github repository folder.
 ```sh
 cd habitat-api
     
