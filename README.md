@@ -4,17 +4,8 @@ contains fresh (march-2020) clone of aiHabitat.
 ```sh
 git clone git@gitlab.ciirc.cvut.cz:steidsta/aag-habitat.git --recurse-submodules
 ```
-## demo:
- dataset (dl.fbaipublicfiles.com/habitat/habitat-test-scenes.zip) 
-Download the test scenes data and extract data folder in zip to habitat-api/data/ where habitat-api/ is the github repository folder.
-```sh
-cd habitat-api
-    
-python /examples/tutorial_example.py 
-```
-This should open up a window with the simulation. Move around with WAD keys. Press F to close.
 
-## install
+## Install
 set up  and activate the conda environment specified in *.yml file
 #### Conda environment requires python 3.6 + one of { Anaconda3 , Miniconda3}
 ```sh
@@ -24,6 +15,8 @@ if instalatin for some reason fails, part of environment will be probably alread
 ```sh
 conda env update -f conda_env_habitat.yml
 ```
+
+
 
 #### habitat installation - Work in progress version, some steps might be ambiguous
  Simplified version, see official install instructions for details.
@@ -66,7 +59,16 @@ $python
 ```
 
 
-
+## Demo
+ dataset (dl.fbaipublicfiles.com/habitat/habitat-test-scenes.zip) 
+Download the test scenes data and extract data folder in zip to habitat-api/data/ where habitat-api/ is the github repository folder.
+```sh
+cd habitat-api
+    
+python /examples/tutorial_example.py 
+```
+This should open up a window with the simulation. Move around with WAD keys. Press F to close.    
+    
 # How to connect to habitat capable server with local X11 server
 step 1: connect to ciirc vpn : https://portal.ciirc.cvut.cz/it-issues/internet/vpn-ciirc
 
@@ -81,12 +83,11 @@ step 4: install habitat:
 *    c] create environment and activate
 *    d] skip the sudo apt install, as all should be present already
 *    e] use flag  --headless for habitat-sim, --parallel 1 is not necessary
-*    f] download and unzip to habitata-api/data test-dataset wget dl.fbaipublicfiles.com/habitat/habitat-test-scenes.zip
+*    f] download and unzip to habitata-api/data the test dataset for example: wget dl.fbaipublicfiles.com/habitat/habitat-test-scenes.zip
 *    g] cd havitat-api and run python examples/tutorial_example.py 
     
 you should see the simulator
-    
-    
+
 
 
 
