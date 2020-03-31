@@ -53,7 +53,7 @@ to quickly verify the instalation once can open python and check whether the mod
 $python
 >>> import habitat
 >>> import habitat_sim
-
+# no errors? good
 ...
 >>>exit()
 ```
@@ -65,7 +65,7 @@ Download the test scenes data and extract data folder in zip to habitat-api/data
 ```sh
 cd habitat-api
     
-python /examples/tutorial_example.py 
+python examples/tutorial_example.py 
 ```
 This should open up a window with the simulation. Move around with WAD keys. Press F to close.    
     
