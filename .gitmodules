@@ -1,6 +1,6 @@
 [submodule "habitat-api"]
 	path = habitat-api
-	url = git@gitlab.ciirc.cvut.cz:steidsta/aag-habitat-api.git
+	url = git@gitlab.ciirc.cvut.cz:lucivpav/aag-habitat-api.git
 [submodule "habitat-sim"]
 	path = habitat-sim
-	url = git@gitlab.ciirc.cvut.cz:steidsta/aag-habitat-sim.git
+	url = git@gitlab.ciirc.cvut.cz:lucivpav/aag-habitat-sim.git
