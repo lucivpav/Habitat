@@ -2,7 +2,7 @@
 contains fresh (march-2020) clone of aiHabitat.
 
 ```sh
-git clone git@gitlab.ciirc.cvut.cz:steidsta/aag-habitat.git --recurse-submodules
+git clone git@github.com:lucivpav/Habitat.git --recurse-submodules
 ```
 
 ## Install
@@ -79,7 +79,7 @@ step 3: ssh connect to 10.35.125.131 with flag -X (to enable forwarding, if usin
 step 4: install habitat: 
   
 *    a] install anaconda
-*    b] git clone  aag-habitat
+*    b] git clone git@github.com:lucivpav/Habitat.git --recurse-submodules
 *    c] create environment and activate
 *    d] skip the sudo apt install, as all should be present already
 *    e] use flag  --headless for habitat-sim, --parallel 1 is not necessary
